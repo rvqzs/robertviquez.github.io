@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>robertviquez.com</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="construction-wrapper">
-            <!-- <img src="construction-icon.png" alt="Under Construction Icon" class="icon"> -->
-            <img height="400" width="300" src="./img/img1.jpeg" alt="">
-            <h1>HOLA MI AMOR PECHOCHA!!</h1>
-            <p>Working to publish my site. It'll be ready to launch soon!</p>
+    <head>
+        <meta charset="UTF-8">
+        <title> Robert Víquez Santos - dev</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        
+    </head>
+
+    <body>
+        
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Content-->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Robert Viquez, a Financial Analyst with a passion for engineering. 
+                Currently, I am pursuing my degree in Systems Engineering at Universidad Internacional de las Américas while working as a Project Analyst at 3M.</p>
+            <p>I have experience in financial analysis, data management and reporting. I'm also learning several technical skills including Python, SQL, VBA, and technologies such as HTML, CSS, and JavaScript.</p>
+            <p>I'm also currently developing this website as a blog/resume/portfolio hub. As well as a web development learning tool to try new things with HTML, CSS and JS!</p>
         </div>
-    </div>
-</body>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>Will add some skills!</p>
+        </div>
+    </section>
+
+    <section id="tablist" class="section">
+        <div class="container">
+            <div class="tabs-list">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="true">Experience</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="certifications-tab" data-bs-toggle="tab" data-bs-target="#certifications-tab-pane" type="button" role="tab" aria-controls="certifications-tab-pane" aria-selected="false">Certifications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses-tab-pane" type="button" role="tab" aria-controls="courses-tab-pane" aria-selected="false">Courses</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="experience-tab-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">This is experience-tab</div>
+                    <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">This is education-tab</div>
+                    <div class="tab-pane fade" id="certifications-tab-pane" role="tabpanel" aria-labelledby="certifications-tab" tabindex="0">This is certifications-tab</div>
+                    <div class="tab-pane fade" id="courses-tab-pane" role="tabpanel" aria-labelledby="courses-tab" tabindex="0">This is courses-tab</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Will add some projects!</p>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JS -->
+    <script>
+        $(document).ready(function() {
+            $("#header").load("./shared/header.html");
+            $("#footer").load("./shared/footer.html");
+        });
+    </script>
+
+    </body>
 </html>
