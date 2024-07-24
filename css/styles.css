@@ -84,3 +84,14 @@ div.media img {
     margin-right: 10px;
     border-radius: 50px;
 }
+
+.btn-linkedin {
+    color: #fff;
+    background-color: #0077B5;
+    border-color: #0077B5;
+}
+.btn-linkedin:hover {
+    color: #fff;
+    background-color: #005983;
+    border-color: #005983;
+}
